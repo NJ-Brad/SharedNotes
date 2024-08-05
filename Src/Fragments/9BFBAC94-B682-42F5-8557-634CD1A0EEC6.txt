@@ -1,0 +1,13 @@
+----
+# <$PAGE_TITLE$>
+----
+Copyright 2024 - Bradford Bruce
+
+<$PAGE_TITLE$>
+<$AUTHOR$>
+<$CREATED$>
+<$MODIFIED_BY$>
+<$MODIFIED$>
+
+
+ 

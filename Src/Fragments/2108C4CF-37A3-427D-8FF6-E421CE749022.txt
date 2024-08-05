@@ -1,0 +1,6 @@
+test2              Image img = Clipboard.GetImage();
+            if (img != null)
+            {
+          Image img = Clipboard.GetImage();
+            if (img != null)
+            {
