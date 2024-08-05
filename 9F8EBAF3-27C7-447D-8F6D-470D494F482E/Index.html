@@ -1,0 +1,1009 @@
+            <!doctype html>
+            <html lang="en">
+              <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge; "/>
+            <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+            <!-- Bootstrap Font Icon CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+<style type="text/css">
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px;
+  color: #333;
+}
+
+body > *:first-child {
+  margin-top: 0 !important;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a.absent {
+  color: #cc0000;
+}
+
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative;
+}
+
+h2:first-child, h1:first-child, h1:first-child + h2, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  text-decoration: none;
+}
+
+h1 tt, h1 code {
+  font-size: inherit;
+}
+
+h2 tt, h2 code {
+  font-size: inherit;
+}
+
+h3 tt, h3 code {
+  font-size: inherit;
+}
+
+h4 tt, h4 code {
+  font-size: inherit;
+}
+
+h5 tt, h5 code {
+  font-size: inherit;
+}
+
+h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777777;
+  font-size: 14px;
+}
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0;
+}
+
+// original (GitHub theme)  It isn't visible
+//hr {
+//  background: transparent url("http://tinyurl.com/bq5kskr") repeat-x 0 0;
+//  border: 0 none;
+//  color: #cccccc;
+//  height: 4px;
+//  padding: 0;
+//}
+
+// not sure where I go this one
+//hr {
+//  border: 0;
+//  clear:both;
+//  display:block;
+//  width: 96%;               
+//  background-color:#FFFF00;
+//  height: 1px;
+//}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0;
+}
+
+li p.first {
+  display: inline-block;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul :first-child, ol :first-child {
+  margin-top: 0;
+}
+
+ul :last-child, ol :last-child {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt > :first-child {
+  margin-top: 0;
+}
+
+dl dt > :last-child {
+  margin-bottom: 0;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd > :first-child {
+  margin-top: 0;
+}
+
+dl dd > :last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777;
+}
+
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+table {
+  padding: 0;
+}
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0;
+}
+
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+span.frame > span {
+  border: 1px solid #dddddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto;
+}
+
+span.frame span img {
+  display: block;
+  float: left;
+}
+
+span.frame span span {
+  clear: both;
+  color: #333333;
+  display: block;
+  padding: 5px 0 0;
+}
+
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-center > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: center;
+}
+
+span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px 0 0;
+  text-align: right;
+}
+
+span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+
+span.float-left span {
+  margin: 13px 0 0;
+}
+
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+
+span.float-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+.copybutton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  font-size: 0.9rem;
+  padding: 0.15rem;
+  background-color: #828282;
+
+  border: ridge 1px #7b7b7c;
+  border-radius: 5px;
+  text-shadow: #c4c4c4 0 0 2px;
+}
+
+.copybutton:hover {
+  cursor: pointer;
+  background-color: #bcbabb;
+}
+/*
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+}
+*/
+
+/* :root, [data-bs-theme=light]  */
+/*
+:root
+{
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-primary-text-emphasis: #052c65;
+    --bs-secondary-text-emphasis: #2b2f32;
+    --bs-success-text-emphasis: #0a3622;
+    --bs-info-text-emphasis: #055160;
+    --bs-warning-text-emphasis: #664d03;
+    --bs-danger-text-emphasis: #58151c;
+    --bs-light-text-emphasis: #495057;
+    --bs-dark-text-emphasis: #495057;
+    --bs-primary-bg-subtle: #cfe2ff;
+    --bs-secondary-bg-subtle: #e2e3e5;
+    --bs-success-bg-subtle: #d1e7dd;
+    --bs-info-bg-subtle: #cff4fc;
+    --bs-warning-bg-subtle: #fff3cd;
+    --bs-danger-bg-subtle: #f8d7da;
+    --bs-light-bg-subtle: #fcfcfd;
+    --bs-dark-bg-subtle: #ced4da;
+    --bs-primary-border-subtle: #9ec5fe;
+    --bs-secondary-border-subtle: #c4c8cb;
+    --bs-success-border-subtle: #a3cfbb;
+    --bs-info-border-subtle: #9eeaf9;
+    --bs-warning-border-subtle: #ffe69c;
+    --bs-danger-border-subtle: #f1aeb5;
+    --bs-light-border-subtle: #e9ecef;
+    --bs-dark-border-subtle: #adb5bd;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg: #fff;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-emphasis-color: #000;
+    --bs-emphasis-color-rgb: 0, 0, 0;
+    --bs-secondary-color: rgba(33, 37, 41, .75);
+    --bs-secondary-color-rgb: 33, 37, 41;
+    --bs-secondary-bg: #e9ecef;
+    --bs-secondary-bg-rgb: 233, 236, 239;
+    --bs-tertiary-color: rgba(33, 37, 41, .5);
+    --bs-tertiary-color-rgb: 33, 37, 41;
+    --bs-tertiary-bg: #f8f9fa;
+    --bs-tertiary-bg-rgb: 248, 249, 250;
+    --bs-heading-color: inherit;
+    --bs-link-color: #0d6efd;
+    --bs-link-color-rgb: 13, 110, 253;
+    --bs-link-decoration: underline;
+    --bs-link-hover-color: #0a58ca;
+    --bs-link-hover-color-rgb: 10, 88, 202;
+    --bs-code-color: #d63384;
+    --bs-highlight-color: #212529;
+    --bs-highlight-bg: #fff3cd;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, .175);
+    --bs-border-radius: .375rem;
+    --bs-border-radius-sm: .25rem;
+    --bs-border-radius-lg: .5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-xxl: 2rem;
+    --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+    --bs-border-radius-pill: 50rem;
+    --bs-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    --bs-box-shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, .175);
+    --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, .075);
+    --bs-focus-ring-width: .25rem;
+    --bs-focus-ring-opacity: .25;
+    --bs-focus-ring-color: rgba(13, 110, 253, .25);
+    --bs-form-valid-color: #198754;
+    --bs-form-valid-border-color: #198754;
+    --bs-form-invalid-color: #dc3545;
+    --bs-form-invalid-border-color: #dc3545;
+}
+*/
+
+/* https://stackoverflow.com/questions/1065435/can-a-css-class-inherit-one-or-more-other-classes */
+[class*="myalert-"] {
+  break-inside: avoid;
+    --bs-alert-bg: transparent;
+    --bs-alert-padding-x: 1rem;
+    --bs-alert-padding-y: 1rem;
+    --bs-alert-margin-bottom: 1rem;
+    --bs-alert-color: inherit;
+    --bs-alert-border-color: transparent;
+    --bs-alert-border: var(--bs-border-width) solid var(--bs-alert-border-color);
+    --bs-alert-border-radius: var(--bs-border-radius);
+    --bs-alert-link-color: inherit;
+    position: relative;
+    padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+    margin-bottom: var(--bs-alert-margin-bottom);
+    color: var(--bs-alert-color);
+    background-color: var(--bs-alert-bg);
+    border: var(--bs-alert-border);
+    border-radius: var(--bs-alert-border-radius);
+}
+.myalert-warning {
+    --bs-alert-color: var(--bs-info-text-emphasis);
+    --bs-alert-bg: var(--bs-info-bg-subtle);
+    --bs-alert-bg: #cff4fc;
+    --bs-alert-border-color: #9eeaf9;
+    --bs-alert-link-color: var(--bs-info-text-emphasis);
+}
+
+[class*="myalert-"] h5, [class*="myalert-"] .h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+[class*="myalert-"] h5:before, [class*="myalert-"] .h5:before {
+    font-family: bootstrap-icons;
+    position: relative;
+    margin-right: 0.5em;
+    top: 0.2em;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.myalert-warning h5:before, myalert-warning .h5:before {
+    content: "\f431";
+}
+
+[class*="alertheading-"] {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+[class*="alertheading-"]:before {
+    font-family: bootstrap-icons;
+    position: relative;
+    margin-right: 0.5em;
+    top: 0.2em;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.alertheading-warning:before {
+    content: "\f431";
+}
+
+.alertheading-note:before {
+    content: "\f431";
+}
+
+.alertheading-tip:before {
+    content: "\f431";
+}
+
+.alertheading-important:before {
+    content: "\f623";
+}
+
+.alertheading-caution:before {
+    content: "\f623";
+}
+
+.alertheading-warning:before {
+    content: "\f333";
+}
+
+
+</style>
+</head>
+<h1 id="local-cloud-fog">Local Cloud (FOG)</h1>
+<h2 id="included-projects">Included projects</h2>
+<p>SampleServer<br />
+CentralConfig<br />
+Blueprint.Proxy<br />
+ServerManager<br />
+SwaggerCentral</p>
+<p>Organizer</p>
+<h2 id="swagger-ui-for-microservices">Swagger UI for microservices</h2>
+<p>&quot;Swag Bag&quot;</p>
+<p>There will be TWO swagger collections.  One for FOG and one for the actual application.</p>
+<p>Leverages the ability to set up OpenAPI in .Net microservices, at the click of a button.</p>
+<p>Consolidates each microservice into a single point of reference.</p>
+<p>Does not expose individual microservices to external users<br />
+More secure<br />
+Only one configuration for reverse proxy</p>
+<h3 id="considerations">Considerations</h3>
+<ul>
+<li>Need to consider using categories</li>
+<li>Do I put all information into a &quot;sorted document&quot;, or pull each category at the end, sort it, then put it back?</li>
+<li>could also tag the items to match the server they come from.  <a href="https://swagger.io/docs/specification/grouping-operations-with-tags/" title="
+Grouping Operations With Tags
+"><br />
+Grouping Operations With Tags</a><br />
+Functional parts of Fog-LC should be written as components that can also be launched directly from the command line.  This will allow the components to be used outside of the main project</li>
+</ul>
+<h2 id="links">Links</h2>
+<p><a href="https://www.moesif.com/blog/technical/api-design/Benefits-of-using-the-OpenAPI-Swagger-specification-for-your-API/" title="Benefits of using the OpenAPI (Swagger) specification for your API? | Moesif Blog">Benefits of using the OpenAPI (Swagger) specification for your API? | Moesif Blog</a><br />
+<a href="https://github.com/microsoft/OpenAPI.NET" title="https://github.com/microsoft/OpenAPI.NET">https://github.com/microsoft/OpenAPI.NET</a><br />
+<a href="https://github.com/andreytreyt/yarp-swagger" title="https://github.com/andreytreyt/yarp-swagger">https://github.com/andreytreyt/yarp-swagger</a><br />
+<a href="https://code-maze.com/swagger-ui-asp-net-core-web-api/" title="Configuring and Using Swagger UI in ASP.NET Core Web API - Code Maze">Configuring and Using Swagger UI in ASP.NET Core Web API - Code Maze</a><br />
+<a href="https://swagger.io/docs/specification/paths-and-operations/" title="Paths and Operations">Paths and Operations</a></p>
+<p>Lots of interesting pieces here : <a href="https://code-maze.com/swagger-ui-asp-net-core-web-api/" title="Configuring and Using Swagger UI in ASP.NET Core Web API - Code Maze">Configuring and Using Swagger UI in ASP.NET Core Web API - Code Maze</a></p>
+<p>// <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-8.0#securing-swagger-ui-endpoints">https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-8.0#securing-swagger-ui-endpoints</a><br />
+// <a href="https://www.daveabrock.com/2020/11/16/httprepl-openapi-swagger-netcoreapis/">https://www.daveabrock.com/2020/11/16/httprepl-openapi-swagger-netcoreapis/</a><br />
+// customizing UI : <a href="https://halldorstefans.com/how-i-customized-the-swagger-ui-in-asp-net-core/">https://halldorstefans.com/how-i-customized-the-swagger-ui-in-asp-net-core/</a></p>
+<p>// <a href="https://dejanstojanovic.net/aspnet/2020/april/combining-multiple-swagger-api-endpoints-in-a-single-ui/">https://dejanstojanovic.net/aspnet/2020/april/combining-multiple-swagger-api-endpoints-in-a-single-ui/</a></p>
+<p>// <a href="https://stackoverflow.com/questions/54460863/c-sharp-swagger-documentation-for-individual-members-of-the-request-body-object">https://stackoverflow.com/questions/54460863/c-sharp-swagger-documentation-for-individual-members-of-the-request-body-object</a><br />
+// <a href="https://stackoverflow.com/questions/54460863/c-sharp-swagger-documentation-for-individual-members-of-the-request-body-object">https://stackoverflow.com/questions/54460863/c-sharp-swagger-documentation-for-individual-members-of-the-request-body-object</a></p>
+<h3 id="http-repl">HTTP-Repl</h3>
+<p><a href="https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/web-api/http-repl/index.md" title="https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/web-api/http-repl/index.md">https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/web-api/http-repl/index.md</a><br />
+<a href="https://learn.microsoft.com/en-us/aspnet/core/web-api/http-repl/?view=aspnetcore-8.0&amp;tabs=linux" title="Test web APIs with the HttpRepl | Microsoft Learn">Test web APIs with the HttpRepl | Microsoft Learn</a><br />
+<a href="https://github.com/dotnet/HttpRepl" title="https://github.com/dotnet/HttpRepl">https://github.com/dotnet/HttpRepl</a><br />
+<a href="https://www.code4it.dev/blog/httprepl/" title="How to use HttpRepl to navigate API endpoints | Code4IT">How to use HttpRepl to navigate API endpoints</a></p>
+<h2 id="steps-to-create">Steps to create</h2>
+<p>New project ASP.NET Core Web API<br />
+Name the project SwagBag<br />
+Make sure &quot;Enable OpenAPI support&quot; is checked<br />
+Compile and execute the project.  You should see the Swagger UI<br />
+<img src="20240417-104607.jpg" alt="20240417-104607.jpg" /><br />
+Add package Microsoft.OpenApi.Readers</p>
+<p>Modify Program.cs<br />
+Replace</p>
+<pre style="tab-size: 4;"><code class="language-csharp">app.UseSwaggerUI();
+</code></pre>
+<p>with</p>
+<pre style="tab-size: 4;"><code class="language-csharp">app.UseSwaggerUI(c =&gt;
+{
+    // this is the original one - might remove it later
+    c.SwaggerEndpoint(&quot;/swagger/v1/swagger.json&quot;, &quot;Swag Bag (local)&quot;);
+
+    var crp = builder.Environment.ContentRootPath;
+
+    c.AddSwaggers(app.Configuration, crp);
+});
+</code></pre>
+<p>Before <code>app.run();</code><br />
+Add</p>
+<pre style="tab-size: 4;"><code class="language-csharp">app.MapGet(&quot;/dl/v1/combined.json&quot;, async () =&gt;
+{
+    string fileName = Path.Join(app.Environment.ContentRootPath, &quot;/dl/v1/combined.json&quot;);
+
+    Stream stream = File.OpenRead(fileName);
+
+    if (stream == null)
+    {
+        TypedResults.NotFound();
+    }
+
+    return Results.Stream(stream, &quot;application/json&quot;);
+});
+</code></pre>
+<p>Add a file to the project, named OpenApiDocumentExtensions.cs</p>
+<pre style="tab-size: 4;"><code class="language-csharp">using Microsoft.OpenApi;
+using Microsoft.OpenApi.Extensions;
+using Microsoft.OpenApi.Interfaces;
+using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi.Readers;
+using Swashbuckle.AspNetCore.SwaggerUI;
+
+namespace OpenApiExtensions
+{
+    public static class OpenApiDocumentExtensions
+    {
+        public static void AddSwaggers(this SwaggerUIOptions c, IConfiguration config, string contentRoot, string folderPath = &quot;/dl/v1/&quot;)
+        {
+            if (config == null)
+            {
+                throw new ArgumentNullException(&quot;config&quot;);
+            }
+
+            IConfiguration config2 = config.GetSection(&quot;Swaggers&quot;);
+            if (config2 == null)
+            {
+                throw new ArgumentNullException(&quot;Swaggers section missing from config (appsettings.json)&quot;);
+            }
+
+            List&lt;SwaggerEntry&gt;? list = config2.Get&lt;List&lt;SwaggerEntry&gt;&gt;();
+
+            OpenApiDocument combinedDoc = new();
+            combinedDoc.Paths = new();
+            combinedDoc.Components = new();
+
+            //SortedDictionary&lt;string, OpenApiPathItem&gt; paths = new();
+
+            foreach (SwaggerEntry se in list)
+            {
+                // Get file and store it somewhere
+
+                ;
+
+                // https://visualstudiomagazine.com/blogs/tool-tracker/2019/10/calling-methods-async.aspx
+                //string fileName = BuildFileName(contentRoot, folderPath, se.Name);
+                //Task task = Download(se.Source, fileName);
+                //task.Wait();
+
+                var httpClient = new HttpClient
+                {
+                    //BaseAddress = new Uri(&quot;https://raw.githubusercontent.com/OAI/OpenAPI-Specification/&quot;)
+                };
+
+                Task&lt;Stream&gt; task = httpClient.GetStreamAsync(se.Source);
+                var stream = task.Result;
+
+                //var stream = await httpClient.GetStreamAsync(&quot;master/examples/v3.0/petstore.yaml&quot;);
+                // Read V3 as YAML
+                var openApiDocument = new OpenApiStreamReader().Read(stream, out var diagnostic);
+
+                combinedDoc.Merge(openApiDocument);
+            }
+
+            // sort paths
+            var sPaths = combinedDoc.Paths.ToArray().OrderBy(x =&gt; x.Key).ToList();
+            combinedDoc.Paths.Clear();
+            foreach (var sPath in sPaths)
+            {
+                combinedDoc.Paths.Add(sPath.Key, sPath.Value);
+            }
+
+            combinedDoc.Components.Schemas = combinedDoc.Components.Schemas.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, OpenApiSchema&gt;();
+            combinedDoc.Components.Responses = combinedDoc.Components.Responses.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, OpenApiResponse&gt;();
+            combinedDoc.Components.Parameters = combinedDoc.Components.Parameters.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, OpenApiParameter&gt;();
+            combinedDoc.Components.Examples = combinedDoc.Components.Examples.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, OpenApiExample&gt;();
+            combinedDoc.Components.RequestBodies = combinedDoc.Components.RequestBodies.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, OpenApiRequestBody&gt;();
+            combinedDoc.Components.Headers = combinedDoc.Components.Headers.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, OpenApiHeader&gt;();
+            combinedDoc.Components.SecuritySchemes = combinedDoc.Components.SecuritySchemes.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, OpenApiSecurityScheme&gt;();
+            combinedDoc.Components.Links = combinedDoc.Components.Links.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, OpenApiLink&gt;();
+            combinedDoc.Components.Callbacks = combinedDoc.Components.Callbacks.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, OpenApiCallback&gt;();
+            combinedDoc.Components.Extensions = combinedDoc.Components.Extensions.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, IOpenApiExtension&gt;();
+            combinedDoc.Servers = combinedDoc.Servers.ToArray().OrderBy(x =&gt; x.Description).ToList();
+            //combinedDoc.SecurityRequirements = combinedDoc.SecurityRequirements.ToArray().OrderBy(x =&gt; x.Key).ToDictionary&lt;string, IOpenApiExtension&gt;();
+            combinedDoc.Tags = combinedDoc.Tags.ToArray().OrderBy(x =&gt; x.Description).ToList();
+
+            //foreach (var v in mergetarget.ExternalDocs)
+            //{
+            //    target.ExternalDocs.Add(v);
+            //}
+            combinedDoc.Extensions = combinedDoc.Extensions.ToArray().OrderBy(x =&gt; x.Key).ToDictionary();
+
+            var outputString = combinedDoc.Serialize(OpenApiSpecVersion.OpenApi3_0, OpenApiFormat.Json);
+
+            string fileName = BuildFileName(contentRoot, folderPath, &quot;combined&quot;);
+            File.WriteAllText(fileName, outputString);
+
+            string rel = Path.GetRelativePath(contentRoot, fileName);
+            rel = rel.TrimStart('.');
+            rel = rel.Replace('\\', '/');
+            ////rel = &quot;https://localhost:7233/&quot; + rel;
+            rel = &quot;https://localhost:7253/apidoc/&quot; + rel;
+
+            //c.SwaggerEndpoint(rel, se.DisplayName);
+            //c.SwaggerEndpoint($@&quot;file:///{fileName}&quot;, se.DisplayName);
+        }
+
+
+        public static void SafeAdd&lt;T, T2&gt;(this IDictionary&lt;T, T2&gt; storage, KeyValuePair&lt;T, T2&gt; item)
+        {
+            if (storage.ContainsKey(item.Key))
+            {
+                return;
+            }
+            storage.Add(item);
+        }
+        public static void SafeAdd&lt;T&gt;(this IList&lt;T&gt; storage, T item)
+        {
+            if (storage.Contains(item))
+            {
+                return;
+            }
+            storage.Add(item);
+        }
+
+        public static void Merge(this OpenApiDocument target, OpenApiDocument mergeThis)
+        {
+            //target.ExternalDocs
+            foreach (var v in mergeThis.Components.Callbacks)
+            {
+                target.Components.Callbacks.SafeAdd(v);
+            }
+            foreach (var v in mergeThis.Components.Examples)
+            {
+                target.Components.Examples.SafeAdd(v);
+            }
+            foreach (var v in mergeThis.Components.Extensions)
+            {
+                target.Components.Extensions.SafeAdd(v);
+            }
+            foreach (var v in mergeThis.Components.Headers)
+            {
+                target.Components.Headers.SafeAdd(v);
+            }
+            foreach (var v in mergeThis.Components.Links)
+            {
+                target.Components.Links.SafeAdd(v);
+            }
+
+            foreach (var v in mergeThis.Components.Parameters)
+            {
+                target.Components.Parameters.SafeAdd(v);
+            }
+
+            foreach (var v in mergeThis.Components.RequestBodies)
+            {
+                target.Components.RequestBodies.SafeAdd(v);
+            }
+            foreach (var v in mergeThis.Components.Responses)
+            {
+                target.Components.Responses.SafeAdd(v);
+            }
+            foreach (var v in mergeThis.Components.Schemas)
+            {
+                target.Components.Schemas.SafeAdd&lt;string, OpenApiSchema&gt;(v);
+            }
+            foreach (var v in mergeThis.Components.SecuritySchemes)
+            {
+                target.Components.SecuritySchemes.SafeAdd(v);
+            }
+
+            ///// &lt;summary&gt;
+            ///// REQUIRED. Provides metadata about the API. The metadata MAY be used by tooling as required.
+            ///// &lt;/summary&gt;
+            //public OpenApiInfo Info { get; set; }
+
+            foreach (var v in mergeThis.Servers)
+            {
+                target.Servers.SafeAdd(v);
+            }
+
+            foreach (var v in mergeThis.Paths)
+            {
+                target.Paths.SafeAdd(v);
+            }
+
+            foreach (var v in mergeThis.SecurityRequirements)
+            {
+                target.SecurityRequirements.SafeAdd(v);
+            }
+
+            foreach (var v in mergeThis.Tags)
+            {
+                target.Tags.Add(v);
+            }
+
+            foreach (var v in mergeThis.Extensions)
+            {
+                target.Extensions.SafeAdd(v);
+            }
+        }
+        public static string BuildFileName(string contentRoot, string folderPath, string entryName)
+        {
+            return Path.ChangeExtension(Path.GetFullPath(Path.Join(contentRoot, folderPath, entryName)), &quot;json&quot;);
+        }
+
+        public class SwaggerEntry
+        {
+            public string Name { get; set; } = string.Empty;
+            public string Source { get; set; } = string.Empty;
+            public string DisplayName { get; set; } = string.Empty;
+        }
+    }
+}
+</code></pre>
+<p>Edit appsettings.json<br />
+Before:</p>
+<pre style="tab-size: 4;"><code class="language-json">{
+  &quot;Logging&quot;: {
+    &quot;LogLevel&quot;: {
+      &quot;Default&quot;: &quot;Information&quot;,
+      &quot;Microsoft.AspNetCore&quot;: &quot;Warning&quot;
+    }
+  },
+  &quot;AllowedHosts&quot;: &quot;*&quot;
+}
+</code></pre>
+<p>After:</p>
+<pre style="tab-size: 4;"><code class="language-json">{
+  &quot;Logging&quot;: {
+    &quot;LogLevel&quot;: {
+      &quot;Default&quot;: &quot;Information&quot;,
+      &quot;Microsoft.AspNetCore&quot;: &quot;Warning&quot;
+    }
+  },
+  &quot;Swaggers&quot;: [
+    {
+      &quot;Name&quot;: &quot;Organizer&quot;,
+      &quot;Source&quot;: &quot;https://localhost:7256/swagger/v1/swagger.json&quot;,
+      &quot;DisplayName&quot;: &quot;Organizer&quot;
+    },
+    {
+      &quot;Name&quot;: &quot;CentralConfig&quot;,
+      &quot;Source&quot;: &quot;https://localhost:7035/swagger/v1/swagger.json&quot;,
+      &quot;DisplayName&quot;: &quot;Central Configuration&quot;
+    }
+  ],
+  &quot;AllowedHosts&quot;: &quot;*&quot;
+}
+</code></pre>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+ 
+<!-- https://github.com/highlightjs/highlight.js/tree/main/src/styles -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/androidstudio.min.css" /> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/lightfair.min.css" /> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/stackoverflow-light.min.css" /> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/tomorrow-night-blue.min.css" /> -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tomorrow-night-blue.min.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" /> -->
+
+
+<!-- https://github.com/arronhunt/highlightjs-copy -->
+<script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
+
+ <script>
+     hljs.addPlugin(new CopyButtonPlugin());
+     hljs.highlightAll(); // initialize highlighting
+ </script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
+
